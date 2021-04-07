@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { ThemeProvider } from '@emotion/react'
+import theme from './theme.js'
+import { Box } from 'rebass'
+import Realtor from './Realtor'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <ThemeProvider theme={theme}>
+    <Box backgroundColor="#FAFAFA" pt="3rem" sx={{ minHeight: "100vh" }}>
+      <Box
+        backgroundColor="#FFFFFF"
+        sx={{
+          maxWidth: "40em",
+          mx: 'auto',
+          px: 3,
+          boxShadow: "3px 3px 3px rgb(0 0 0 / 10%)"
+        }}>
+        <Realtor />
+      </Box>
+    </Box>
+  </ThemeProvider>
 }
 
-export default App;
+export default App
