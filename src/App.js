@@ -1,14 +1,16 @@
+/** @jsxImportSource theme-ui */
 import React from 'react'
-import { ThemeProvider } from '@emotion/react'
-import theme from './theme.js'
-import { Box } from 'rebass'
+import { ThemeProvider } from 'theme-ui'
+import theme from '@rebass/preset'
+import { Box, Button } from 'rebass'
 import Realtor from './Realtor'
 
 function App() {
   return <ThemeProvider theme={theme}>
-    <Box backgroundColor="#FAFAFA" pt="3rem" sx={{ minHeight: "100vh" }}>
+    <Box pt="1" sx={{ bg: "secondary", minHeight: "100vh", }}>
+      <Button bg='secondary' />
       <Box
-        backgroundColor="#FFFFFF"
+        backgroundColor="primary"
         sx={{
           maxWidth: "40em",
           mx: 'auto',
@@ -18,7 +20,7 @@ function App() {
         <Realtor />
       </Box>
     </Box>
-  </ThemeProvider>
+  </ThemeProvider >
 }
 
 export default App
