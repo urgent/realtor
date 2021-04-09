@@ -1,2 +1,5 @@
 .next
 cypress
+.husky
+yarn.lock
+.prettierignore
