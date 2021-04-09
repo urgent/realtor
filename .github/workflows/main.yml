@@ -6,7 +6,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Run unit tests
+      - name: Install
+        run: yarn install
+      - name: Test
         run: yarn test
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
