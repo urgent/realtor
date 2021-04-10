@@ -3,3 +3,4 @@ cypress
 .husky
 yarn.lock
 .prettierignore
+components/__snapshots__/**/*
