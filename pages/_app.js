@@ -1,3 +1,4 @@
+import React from "react";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 
 // Extend the theme to include custom colors, fonts, etc
