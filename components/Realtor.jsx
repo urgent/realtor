@@ -3,7 +3,12 @@ import { Box, Image, Heading, Text } from "@chakra-ui/react";
 
 export function Realtor({ image, name, address }) {
   return (
-    <Box data-cy="realtor-row">
+    <Box
+      data-cy="realtor-row"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+    >
       <Image data-cy="realtor-image" src={image} />
       <Box>
         <Heading as="h3" data-cy="realtor-name">

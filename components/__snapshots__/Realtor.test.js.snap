@@ -2,7 +2,7 @@
 
 exports[`renders correctly 1`] = `
 <div
-  className="css-0"
+  className="css-1oqd3nr"
   data-cy="realtor-row"
 >
   <img
@@ -37,7 +37,7 @@ exports[`renders correctly 2`] = `
   data-cy="realtor-table"
 >
   <div
-    className="css-0"
+    className="css-1oqd3nr"
     data-cy="realtor-row"
   >
     <img
