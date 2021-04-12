@@ -3,6 +3,66 @@
 exports[`renders correctly 1`] = `
 <div
   className="css-0"
+  data-cy="realtor-row"
+>
+  <img
+    className="chakra-image__placeholder css-0"
+    data-cy="realtor-image"
+  />
+  <div
+    className="css-0"
+  >
+    <h3
+      className="chakra-heading css-0"
+      data-cy="realtor-name"
+    >
+      Georgeanna Newmones
+    </h3>
+    <p
+      className="chakra-text css-0"
+      data-cy="realtor-address"
+    >
+      Executive Realtors
+3817 Ventnor Ave
+Atlantic City, NJ 8401
+Office - 609-645-0303
+    </p>
+  </div>
+</div>
+`;
+
+exports[`renders correctly 2`] = `
+<div
+  className="css-0"
   data-cy="realtor-table"
-/>
+>
+  <div
+    className="css-0"
+    data-cy="realtor-row"
+  >
+    <img
+      className="chakra-image__placeholder css-0"
+      data-cy="realtor-image"
+    />
+    <div
+      className="css-0"
+    >
+      <h3
+        className="chakra-heading css-0"
+        data-cy="realtor-name"
+      >
+        Georgeanna Newmones
+      </h3>
+      <p
+        className="chakra-text css-0"
+        data-cy="realtor-address"
+      >
+        Executive Realtors
+3817 Ventnor Ave
+Atlantic City, NJ 8401
+Office - 609-645-0303
+      </p>
+    </div>
+  </div>
+</div>
 `;

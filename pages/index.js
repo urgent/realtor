@@ -1,6 +1,15 @@
 import React from "react";
 import Head from "next/head";
-import Realtor from "../components/Realtor";
+import { RealtorTable } from "../components/Realtor";
+
+const data = [
+  {
+    name: "Georgeanna Newmones",
+    address:
+      "Executive Realtors\r\n3817 Ventnor Ave\r\nAtlantic City, NJ 8401\r\nOffice - 609-645-0303",
+    image: "/bio/Georgeanna-Newmones.jpg",
+  },
+];
 
 export default function Home() {
   return (
@@ -11,7 +20,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Realtor />
+        <RealtorTable realtors={data} />
       </main>
 
       <footer></footer>
