@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { RealtorTable } from "../components/Realtor";
+import { Grid } from "@chakra-ui/react";
 
 const data = [
   {
@@ -18,10 +19,11 @@ export default function Home() {
         <title>NJ Realtor</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <main>
-        <RealtorTable realtors={data} />
-      </main>
+      <Grid gridRow="body" gridColumn="content" gap={6}>
+        <main>
+          <RealtorTable realtors={data} />
+        </main>
+      </Grid>
 
       <footer></footer>
     </>
